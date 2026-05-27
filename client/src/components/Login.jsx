@@ -13,13 +13,15 @@ function Login({ setIsAuthenticated }) {
     e.preventDefault();
 
     const response = await fetch(
-      "https://future-fs-02-m4r2.onrender.com/api/auth/login",
+      `${import.meta.env.VITE_API_URL}/api/auth/login`,
       {
         method: "POST",
+
         headers: {
           "Content-Type":
             "application/json"
         },
+
         body: JSON.stringify({
           email,
           password
