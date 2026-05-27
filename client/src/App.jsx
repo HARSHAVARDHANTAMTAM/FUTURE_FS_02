@@ -28,7 +28,7 @@ function App() {
   const fetchLeads = async () => {
 
     const response = await fetch(
-      "http://localhost:5000/api/leads",
+      "https://future-fs-02-m4r2.onrender.com/api/leads",
       {
         headers: {
           Authorization:
@@ -63,7 +63,7 @@ function App() {
     e.preventDefault();
 
     await fetch(
-      "http://localhost:5000/api/leads",
+      "https://future-fs-02-m4r2.onrender.com/api/leads",
       {
         method: "POST",
 
@@ -299,7 +299,7 @@ function App() {
                         onChange={async (e) => {
 
                           await fetch(
-                            `http://localhost:5000/api/leads/${lead._id}`,
+                            'https://future-fs-02-m4r2.onrender.com/api/leads/${lead._id}',
                             {
                               method: "PUT",
 
@@ -346,7 +346,7 @@ function App() {
                         onClick={async () => {
 
                           await fetch(
-                            `http://localhost:5000/api/leads/${lead._id}`,
+                            `https://future-fs-02-m4r2.onrender.com/api/leads/${lead._id}`,
                             {
                               method: "DELETE",
 

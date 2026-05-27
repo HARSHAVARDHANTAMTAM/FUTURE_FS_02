@@ -13,7 +13,7 @@ function Login({ setIsAuthenticated }) {
     e.preventDefault();
 
     const response = await fetch(
-      "http://localhost:5000/api/auth/login",
+      "https://future-fs-02-m4r2.onrender.com/api/auth/login",
       {
         method: "POST",
         headers: {
@@ -41,7 +41,9 @@ function Login({ setIsAuthenticated }) {
 
     } else {
 
-      alert("Invalid Credentials");
+      alert(
+        "Invalid Credentials"
+      );
 
     }
 
